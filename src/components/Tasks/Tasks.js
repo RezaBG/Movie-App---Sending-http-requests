@@ -1,6 +1,6 @@
 import Section from "../UI/Section";
 import TaskItem from "./TaskItem";
-import classes from "./TaskItem.module.css";
+import classes from "./Tasks.module.css";
 
 const Tasks = (props) => {
   let taskList = <h2>No tasks found. Start adding some!</h2>;
@@ -18,7 +18,7 @@ const Tasks = (props) => {
   let content = taskList;
 
   if (props.error) {
-    content = <button onClick={props.onFetch}>Try agian</button>;
+    content = <button onClick={props.onFetch}>Try again</button>;
   }
 
   if (props.loading) {
