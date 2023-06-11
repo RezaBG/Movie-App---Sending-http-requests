@@ -7,7 +7,6 @@ const NewTask = (props) => {
 
   const createTask = (taskText, taskData) => {
     const generatedId = taskData.name;
-    const createdTask = { id: generatedId, text: taskText };
 
     props.onAddTask(createTask);
   };
